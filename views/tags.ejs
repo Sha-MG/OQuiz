@@ -1,0 +1,36 @@
+<%- include("partials/header") %>
+
+    <main class="container py-4">
+
+        <h1>Thèmes</h1>
+    
+        <div>
+
+            <% for (let tag of tagList) { %>
+
+                <span class="badge bg-primary p-2 mb-1"><%= tag.name %></span>
+
+                <!-- si on n'a aucun quiz dans cette catégorie, le tableau quizzes aura une longueur de zéro,et donc on affiche un petite phrase : -->
+                <% if (tag.quizzes.length === 0) { %> 
+
+                    <p class="ms-2">Aucun quizz dans cette catégorie pour le moment....</p>
+                
+                <%  } else { %> 
+                    <!-- sinon, on a des quiz, donc on boucle dessus pour les afficher -->
+                    <ul>
+                        <% for (let quiz of tag.quizzes) { %>
+                            <li><a href="/quiz/<%= quiz.id %>"><%= quiz.title %></a></li>
+                        <% } %>  
+                    </ul>
+
+                <% } %>               
+                
+        
+            <% } %>
+        </div>
+  
+    </main>
+  
+<%- include("partials/footer") %>
+
+  
