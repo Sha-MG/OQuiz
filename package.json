@@ -1,0 +1,25 @@
+{
+  "name": "s05-oquiz-red",
+  "version": "1.0.0",
+  "description": "Pour commencer, il faut mettre en place la base de données !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Moai/S05-OQuiz-RED.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Moai/S05-OQuiz-RED/issues"
+  },
+  "homepage": "https://github.com/O-clock-Moai/S05-OQuiz-RED#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "pg": "^8.8.0",
+    "sequelize": "^6.25.8"
+  }
+}
